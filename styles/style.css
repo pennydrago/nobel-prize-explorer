@@ -11,22 +11,60 @@ body {
   color: #1F1F1F;
   font-family: Tahoma, sans-serif;
   line-height: 2;
+  font-size: 1.5rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #59355B;
 }
 
 .container {
-  background-color: aqua;
+  /*background-color: aqua;*/
   width: 67%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Header styles */
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
 
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+nav li {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.navpadding {
+  margin-right: 5rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #194C65;
+}
+
+.toggle {
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
 
 /* About section styles */
 #about {
