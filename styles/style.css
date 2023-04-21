@@ -11,7 +11,7 @@ body {
   color: #1F1F1F;
   font-family: Tahoma, sans-serif;
   line-height: 2;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h1,
@@ -52,6 +52,7 @@ nav li {
 }
 
 nav a {
+  color: #59355B;
   text-decoration: none;
 }
 
@@ -63,7 +64,7 @@ nav a:hover {
 .toggle {
   margin: 1rem 0rem;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* About section styles */
@@ -72,6 +73,30 @@ nav a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  color:#FFFFFF;
+}
+
+#about h2 {
+  color: #C9B6E7;
+}
+
+/* Footer section styles */
+footer {
+  padding-top: 2rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #59355B;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:#194C65;
+  text-decoration: underline;
 }
