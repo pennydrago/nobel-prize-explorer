@@ -16,3 +16,24 @@ body {
 h1, h2, h3 {
   color: #59355B;
 }
+
+.container {
+  background-color: aqua;
+  width: 67%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+
+
+
+/* About section styles */
+#about {
+  background-image: url("../images/ivan-jevtic-AL3Cbxp8css-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
