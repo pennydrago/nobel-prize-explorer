@@ -98,18 +98,35 @@ button:hover {
   background-color: #FFFFFF;
 }
 
+/* Discovery section styles */
+#prize-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+}
+
+.prize-card {
+  min-width: 30%;
+  border: 2px solid black;
+  padding: 0rem 0.75rem;
+}
+
+.prize-card li {
+  list-style: none;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
 /* Footer section styles */
 footer {
-  padding: 2rem 0rem;
-  position: fixed;
-  left: 0rem;
-  bottom: 0rem;
-  width: 100%;
-  /*TODO background-color: #99CBE5;*/
+  padding: 1.5rem 0rem;
+  /* TODO background-color: #99CBE5;*/
 }
 
 footer p {
   font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 footer a {
