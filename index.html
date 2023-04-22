@@ -21,8 +21,8 @@
           <li><a href="#explore">Explore</a></li>
         </ul>
       </nav>
-      <!-- TODO Insert toggle button for dark/light mode -->
-      <button type="button" class="toggle">Light / Dark</button>
+      <!-- TODO Add style to toggle button for dark/light mode -->
+      <button type="button">Light / Dark</button>
     </div>
   </header>
 
@@ -40,8 +40,32 @@
     <!-- Explore section -->
     <section id="explore">
       <div class="container">
-        <!-- TODO Insert form to search for Nobel Prizes -->
+        <form>
         <h2>Explore</h2>
+        <p>Choose at least one of the following to explore the Nobel Prizes.</p>
+        <!-- Select category -->
+        <p><!-- TODO add in values from API -->
+          <label for="category">Select a category:</label>
+          <select name="category" id="category">
+            <option value="">Please select an option</option>
+            <option value="">Chemistry</option>
+            <option value="">Economic sciences</option>
+            <option value="">Literature</option>
+            <option value="">Medicine</option>
+            <option value="">Peace</option>
+            <option value="">Physics</option>
+          </select>
+        </p>
+        <!-- Select year -->
+        <p>
+          <label for="year">Select a year:</label>
+          <input name="year" id="year" type="number" min="1901" max="2022" />
+        </p>
+        <!-- Submit form -->
+        <p>
+          <button type="submit">Submit search</button>
+        </p>
+        </form>
       </div>
     </section>
 

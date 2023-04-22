@@ -21,7 +21,7 @@ h3 {
 }
 
 .container {
-  /*background-color: aqua;*/
+  /*TODO background-color: aqua;*/
   width: 67%;
   max-width: 1200px;
   margin: 0 auto;
@@ -61,10 +61,17 @@ nav a:hover {
   color: #194C65;
 }
 
-.toggle {
+button {
   margin: 1rem 0rem;
   padding: 0.5rem;
   font-size: 1.5rem;
+  background-color: #C9B6E7;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #99CBE5;
+  cursor: pointer;
 }
 
 /* About section styles */
@@ -82,9 +89,23 @@ nav a:hover {
   color: #C9B6E7;
 }
 
+/* Explore section styles */
+#category, #year {
+  font-size: 1.75rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: #FFFFFF;
+}
+
 /* Footer section styles */
 footer {
-  padding-top: 2rem;
+  padding: 2rem 0rem;
+  position: fixed;
+  left: 0rem;
+  bottom: 0rem;
+  width: 100%;
+  /*TODO background-color: #99CBE5;*/
 }
 
 footer p {
