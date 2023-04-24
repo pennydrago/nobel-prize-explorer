@@ -15,8 +15,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: #59355B;
 }
 
@@ -58,7 +57,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  color: #194C65;
+  /*TODO color: #194C65;*/
 }
 
 button {
@@ -109,7 +108,7 @@ button:hover {
 .prize-card {
   min-width: 30%;
   border: 2px solid black;
-  padding: 0rem 0.75rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .prize-card li {
@@ -135,6 +134,20 @@ footer a {
 }
 
 footer a:hover {
-  color:#194C65;
+  /*TODO color:#194C65;*/
   text-decoration: underline;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.dark-mode-element {
+  color: #C9B6E7;
+}
+
+.dark-mode-card {
+  border-color: #FFFFFF;
 }
