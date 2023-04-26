@@ -29,6 +29,12 @@ search.addEventListener('click', function () {
   console.log('Search button clicked'); // test
 });
 
+// Callback function to log the fetched data to the console
+function displayPrize(prize) {
+  console.log(prize.awardYear);
+  console.log(prize.categoryFullName.en);
+};
+
 // To fetch data from API for search input values
 search.addEventListener('click', function () {
   const categoryInput = document.getElementById('category');
@@ -42,8 +48,5 @@ search.addEventListener('click', function () {
   const prizes = fetch(`https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=${categoryValue}&nobelPrizeYear=${yearValue}`);
   prizes
     .then(response => response.json())
-    .then(data => data.nobelPrizes.forEach(function (prize) {
-      console.log(prize.awardYear); // test
-      console.log(prize.categoryFullName.en); // test
-    }));
+    .then(data => data.nobelPrizes.forEach(prize => displayPrize(prize)));
 });
