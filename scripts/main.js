@@ -42,3 +42,9 @@ search.addEventListener('click', function () {
   console.log(`I searched for the category of ${categoryValue} and the year of ${yearValue}.`);
 })
 
+// To fetch data from API (all data with default limit of 25)
+const prizes = fetch('https://api.nobelprize.org/2.1/nobelPrizes');
+prizes
+.then(response => response.json())
+.then(data => console.log(data));
+
