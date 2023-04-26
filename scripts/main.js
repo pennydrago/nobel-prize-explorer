@@ -50,3 +50,49 @@ search.addEventListener('click', function () {
     .then(response => response.json())
     .then(data => data.nobelPrizes.forEach(prize => displayPrize(prize)));
 });
+
+// Function to display search results
+
+// To test creating and adding elements to the DOM
+const main = document.querySelector("main");
+
+const discovery = document.createElement("section");
+discovery.id = "discovery";
+
+const container = document.createElement("div");
+container.className = "container";
+discovery.appendChild(container);
+
+const subheading = document.createElement("h2");
+subheading.className = "dark-element";
+subheading.textContent = "Discovery";
+container.appendChild(subheading);
+
+const prizeList = document.createElement("ul");
+prizeList.id = "prize-list";
+container.appendChild(prizeList);
+
+const prizeCard = document.createElement("li");
+prizeCard.classList.add("prize-card", "dark-card");
+prizeList.appendChild(prizeCard);
+
+const prizeCardList = document.createElement("ul");
+prizeCard.appendChild(prizeCardList);
+
+let prizeCardItem = document.createElement("li");
+prizeCardItem.textContent = "Nobel Prize";
+prizeCardList.appendChild(prizeCardItem);
+
+prizeCardItem = document.createElement("li");
+prizeCardItem.textContent = "Year";
+prizeCardList.appendChild(prizeCardItem);
+
+prizeCardItem = document.createElement("li");
+prizeCardItem.textContent = "Laureates";
+prizeCardList.appendChild(prizeCardItem);
+
+prizeCardItem = document.createElement("li");
+prizeCardItem.textContent = "Topic";
+prizeCardList.appendChild(prizeCardItem);
+
+main.appendChild(discovery);
