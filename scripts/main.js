@@ -3,21 +3,42 @@ console.log('Hello');
 
 // Function to create light/dark mode toggle
 
-let modeButton = document.getElementById('dark-mode-button');
+const modeButton = document.getElementById('dark-mode-button');
 
 modeButton.addEventListener('click', function () {
 
   document.body.classList.toggle('dark-mode');
 
-  let darkElements = document.querySelectorAll('.dark-element');
+  const darkElements = document.querySelectorAll('.dark-element');
   darkElements.forEach(function (darkElement) {
     darkElement.classList.toggle('dark-mode-element')
   });
 
-  let darkCards = document.querySelectorAll('.dark-card');
+  const darkCards = document.querySelectorAll('.dark-card');
   darkCards.forEach(function (darkCard) {
     darkCard.classList.toggle('dark-mode-card')
   });
 
 });
+
+// Function to create search functionality
+
+// To test access to search button
+const search = document.getElementById('search');
+search.addEventListener('click', function () {
+  console.log('Search button clicked');
+});
+
+// To click search button and access input values
+search.addEventListener('click', function () {
+  const categoryInput = document.getElementById('category');
+  const categoryValue = categoryInput.value;
+  console.log(categoryValue);
+
+  const yearInput = document.getElementById('year');
+  const yearValue = yearInput.value;
+  console.log(yearValue);
+
+  console.log(`I searched for the category of ${categoryValue} and the year of ${yearValue}.`);
+})
 
