@@ -30,21 +30,36 @@ search.addEventListener('click', function () {
 });
 
 // To click search button and access input values
+// search.addEventListener('click', function () {
+//   const categoryInput = document.getElementById('category');
+//   const categoryValue = categoryInput.value;
+//   console.log(categoryValue);
+
+//   const yearInput = document.getElementById('year');
+//   const yearValue = yearInput.value;
+//   console.log(yearValue);
+
+//   console.log(`I searched for the category of ${categoryValue} and the year of ${yearValue}.`);
+// })
+
+// To fetch data from API (all data with default limit of 25)
+// const prizes = fetch('https://api.nobelprize.org/2.1/nobelPrizes');
+// prizes
+//   .then(response => response.json())
+//   .then(data => console.log(data));
+
+// To fetch data from API for search input values
 search.addEventListener('click', function () {
   const categoryInput = document.getElementById('category');
   const categoryValue = categoryInput.value;
-  console.log(categoryValue);
 
   const yearInput = document.getElementById('year');
   const yearValue = yearInput.value;
-  console.log(yearValue);
 
   console.log(`I searched for the category of ${categoryValue} and the year of ${yearValue}.`);
-})
 
-// To fetch data from API (all data with default limit of 25)
-const prizes = fetch('https://api.nobelprize.org/2.1/nobelPrizes');
-prizes
-.then(response => response.json())
-.then(data => console.log(data));
-
+  const prizes = fetch(`https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=${categoryValue}&nobelPrizeYear=${yearValue}`);
+  prizes
+    .then(response => response.json())
+    .then(data => console.log(data));
+});
