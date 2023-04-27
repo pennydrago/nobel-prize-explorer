@@ -106,7 +106,7 @@ button:hover {
 }
 
 .prize-card {
-  min-width: 30%;
+  width: 30%;
   border: 2px solid black;
   padding: 0.5rem 0.75rem;
 }
