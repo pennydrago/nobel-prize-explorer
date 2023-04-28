@@ -41,11 +41,6 @@ const container = document.createElement("div");
 container.className = "container";
 discovery.appendChild(container);
 
-const subheading = document.createElement("h2");
-subheading.className = "dark-element";
-subheading.textContent = "Discovery";
-container.appendChild(subheading);
-
 const prizeList = document.createElement("ul");
 prizeList.id = "prize-list";
 container.appendChild(prizeList);
@@ -72,10 +67,16 @@ function displayPrize(prize) {
   cardButton.className = "delete";
   cardButton.type = "button";
   cardButton.textContent = "Delete";
+  cardButton.addEventListener('click', deleteCard);
   prizeCard.appendChild(cardButton);
 
   main.appendChild(discovery);
 };
+
+// Function to remove prize card
+function deleteCard(event) {
+  event.target.parentNode.remove();
+}
 
 // To fetch data from API for search input values
 search.addEventListener('click', function () {

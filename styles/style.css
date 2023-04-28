@@ -98,6 +98,10 @@ button:hover {
 }
 
 /* Discovery section styles */
+#discovery {
+  margin: 2rem 0rem;
+}
+
 #prize-list {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +141,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
