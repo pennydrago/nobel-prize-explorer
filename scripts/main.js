@@ -68,6 +68,12 @@ function displayPrize(prize) {
   prizeCardItem.textContent = prize.awardYear;
   prizeCardList.appendChild(prizeCardItem);
 
+  const cardButton = document.createElement("button");
+  cardButton.className = "delete";
+  cardButton.type = "button";
+  cardButton.textContent = "Delete";
+  prizeCard.appendChild(cardButton);
+
   main.appendChild(discovery);
 };
 

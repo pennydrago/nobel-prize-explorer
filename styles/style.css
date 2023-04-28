@@ -117,6 +117,19 @@ button:hover {
   font-size: 1.5rem;
 }
 
+button.delete {
+  margin: 0rem 0rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  background-color: #C9B6E7;
+  border-radius: 5px;
+}
+
+button.delete:hover {
+  background-color: #99CBE5;
+  cursor: pointer;
+}
+
 /* Footer section styles */
 footer {
   padding: 1.5rem 0rem;
