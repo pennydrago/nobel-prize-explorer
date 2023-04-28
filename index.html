@@ -40,30 +40,28 @@
     <section id="explore">
       <div class="container">
         <form>
-        <h2 class="dark-element">Explore</h2>
-        <p>Choose at least one of the following to explore the Nobel Prizes.</p>
-        <!-- Select category -->
-        <p>
-          <label for="category">Select a category:</label>
-          <select name="category" id="category">
-            <option value="">Please select an option</option>
-            <option value="che">Chemistry</option>
-            <option value="eco">Economic sciences</option>
-            <option value="lit">Literature</option>
-            <option value="med">Medicine</option>
-            <option value="pea">Peace</option>
-            <option value="phy">Physics</option>
-          </select>
-        </p>
-        <!-- Select year -->
-        <p>
-          <label for="year">Select a year:</label>
-          <input name="year" id="year" type="number" min="1901" max="2022" />
-        </p>
-        <!-- Search button -->
-        <p>
+          <h2 class="dark-element">Explore</h2>
+          <p>Choose from the following to explore the Nobel Prizes.</p>
+          <!-- Select category -->
+          <p>
+            <label for="category">Select a category:</label>
+            <select name="category" id="category">
+              <option value="">Please select an option</option>
+              <option value="che">Chemistry</option>
+              <option value="eco">Economic sciences</option>
+              <option value="lit">Literature</option>
+              <option value="med">Medicine</option>
+              <option value="pea">Peace</option>
+              <option value="phy">Physics</option>
+            </select>
+          </p>
+          <!-- Select year -->
+          <p>
+            <label for="year">Select a year:</label>
+            <input name="year" id="year" type="number" min="1901" max="2022">
+          </p>
+          <!-- Search button -->
           <button type="button" id="search">Search</button>
-        </p>
         </form>
       </div>
     </section>
@@ -72,11 +70,21 @@
 
   <!-- Footer section -->
   <footer>
-    <div class="container">
-      <p>Designed and developed by Penny Drago 2023</p>
-      <p>Data sourced from <a class="dark-element" href="https://www.nobelprize.org/about/developer-zone-2/">Nobel Prize API version 2</a></p>
-      <p>Information from <a class="dark-element" href="https://www.nobelprize.org/prizes/facts/nobel-prize-facts">Nobel Prize facts</a></p>
-      <p>Photo by <a class="dark-element" href="https://unsplash.com/@ivanjevtic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Jevtic</a> on <a class="dark-element" href="https://unsplash.com/photos/AL3Cbxp8css?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    <div class="container inline">
+      <div>
+        <p>Designed and developed by Penny Drago &copy; 2023</p>
+        <p>Data sourced from <a class="dark-element" href="https://www.nobelprize.org/about/developer-zone-2/">Nobel
+            Prize API version 2</a></p>
+      </div>
+      <div>
+        <p>Information from <a class="dark-element"
+            href="https://www.nobelprize.org/prizes/facts/nobel-prize-facts">Nobel Prize facts</a></p>
+        <p>Photo by <a class="dark-element"
+            href="https://unsplash.com/@ivanjevtic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan
+            Jevtic</a> on <a class="dark-element"
+            href="https://unsplash.com/photos/AL3Cbxp8css?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </div>
     </div>
   </footer>
 
