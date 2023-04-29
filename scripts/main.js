@@ -14,6 +14,9 @@ modeButton.addEventListener('click', function () {
   darkCards.forEach(function (darkCard) {
     darkCard.classList.toggle('dark-mode-card')
   });
+
+  const darkFooter = document.querySelector('.dark-footer');
+  darkFooter.classList.toggle('dark-mode-footer');
 });
 
 // Functions for searching for information, displaying search results and deleting search results
@@ -24,6 +27,10 @@ function displayPrize(prize) {
 
   const prizeCard = document.createElement("li");
   prizeCard.classList.add("prize-card", "dark-card");
+  const darkMode = document.querySelector(".dark-mode");
+  if (darkMode) {
+    prizeCard.classList.add("dark-mode-card");
+  }
   prizeList.appendChild(prizeCard);
 
   const prizeCardList = document.createElement("ul");

@@ -135,6 +135,7 @@ button.delete:hover {
 /* Footer section styles */
 footer {
   padding: 1.5rem 0rem;
+  border-top: 2px solid #1F1F1F;
 }
 
 footer p {
@@ -163,4 +164,8 @@ footer a:hover {
 
 .dark-mode-card {
   border-color: #FFFFFF;
+}
+
+.dark-mode-footer {
+  border-top: 2px solid #FFFFFF;
 }
