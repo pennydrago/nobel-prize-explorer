@@ -51,6 +51,7 @@ This application is a minimum viable product (MVP), with the number of returned 
 - [W3Schools, How TO - Toggle Class](https://www.w3schools.com/howto/howto_js_toggle_class.asp)
 - [W3Schools, HTML DOM ELement classList](https://www.w3schools.com/jsref/prop_element_classlist.asp)
 - [CSS-Tricks, Adhuham, A Complete Guide to Dark Mode on the Web](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
+- [Larry Sass-Ainsworth, Iterating over an HTML Collection in JavaScript](https://medium.com/@larry.sassainsworth/iterating-over-an-html-collection-in-javascript-5071f58fad6b)
 
 ### License
 None

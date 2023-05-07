@@ -93,6 +93,9 @@ form.addEventListener('submit', event => event.preventDefault());
 // To fetch data from API for search input values
 const search = document.getElementById('search');
 search.addEventListener('click', function () {
+  const searchResults = Array.from(document.getElementsByClassName('prize-card'));
+  searchResults.forEach(card => card.remove());
+  
   const categoryInput = document.getElementById('category');
   const categoryValue = categoryInput.value;
 
