@@ -44,6 +44,22 @@ function displayPrize(prize) {
   prizeCardItem.textContent = prize.awardYear;
   prizeCardList.appendChild(prizeCardItem);
 
+  prizeCardItem = document.createElement("li");
+  prizeCardItem.textContent = `Awarded: ${prize.dateAwarded}`;
+  prizeCardList.appendChild(prizeCardItem);
+
+  prizeCardItem = document.createElement("li");
+  prizeCardItem.textContent = `Prize amount: SEK ${prize.prizeAmount}`;
+  prizeCardList.appendChild(prizeCardItem);
+
+  prizeCardItem = document.createElement("li");
+  prizeCardItem.textContent = "Laureate(s):";
+  const prizeCardLaureates = document.createElement("ul");
+  prizeCardItem.appendChild(prizeCardLaureates);
+
+  prize.laureates.forEach(laureate => displayLaureate(laureate, prizeCardLaureates));
+  prizeCardList.appendChild(prizeCardItem);
+
   const cardButton = document.createElement("button");
   cardButton.className = "delete";
   cardButton.type = "button";
@@ -52,10 +68,27 @@ function displayPrize(prize) {
   prizeCard.appendChild(cardButton);
 };
 
+// Function to display laureate names
+function displayLaureate(laureate, laureateList) {
+  if (laureate.fullName) {
+    const prizeCardLaureateName = document.createElement("li");
+    prizeCardLaureateName.textContent = laureate.fullName.en;
+    laureateList.appendChild(prizeCardLaureateName);
+  } else if (laureate.orgName) {
+    const prizeCardOrgName = document.createElement("li");
+    prizeCardOrgName.textContent = laureate.orgName.en;
+    laureateList.appendChild(prizeCardOrgName);
+  }
+}
+
 // Function to remove prize card
 function deleteCard(event) {
   event.target.parentNode.remove();
 }
+
+// Function to prevent default form behaviour
+const form = document.querySelector('form');
+form.addEventListener('submit', event => event.preventDefault());
 
 // To fetch data from API for search input values
 const search = document.getElementById('search');
